@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Work detail</title>
+		<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<!-- Fonts-->
+		<link rel="stylesheet" type="text/css" href="assets/fonts/fontawesome/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/fonts/pe-icon/pe-icon.css">
+		<!-- Vendors-->
+		<link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/grid.css">
+		<link rel="stylesheet" type="text/css" href="assets/vendors/magnific-popup/magnific-popup.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/vendors/swiper/swiper.css">
+		<!-- App & fonts-->
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:400,700">
+		<link rel="stylesheet" type="text/css" id="app-stylesheet" href="assets/css/main.css"><!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	
+	<body>
+		<div class="page-wrap" id="root">
+			
+			<!-- header -->
+			<header class="header header--fixed">
+				<div class="header__inner">
+					<div class="header__logo"><a href="index.html"><img src="assets/img/logo.png" alt="" style="width: 122px;"/></a></div>
+					<button class="header-burger" id="header-burger" aria-label="Toggle menu" aria-expanded="false">
+						<span></span><span></span><span></span>
+					</button>
+					<div class="header-nav-wrap" id="site-nav-wrap">
+						<nav class="site-nav">
+							<ul class="site-nav__list">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="My_Design_Approach.html">My Design Approach</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header><!-- End / header -->
+			<script>
+			(function () {
+				var burger = document.getElementById('header-burger');
+				var navWrap = document.getElementById('site-nav-wrap');
+				if (!burger || !navWrap) { return; }
+
+				function closeMenu() {
+					burger.classList.remove('is-open');
+					navWrap.classList.remove('is-open');
+					burger.setAttribute('aria-expanded', 'false');
+				}
+
+				burger.addEventListener('click', function (e) {
+					e.preventDefault();
+					e.stopPropagation();
+					var isOpen = burger.classList.toggle('is-open');
+					if (isOpen) {
+						navWrap.classList.add('is-open');
+					} else {
+						navWrap.classList.remove('is-open');
+					}
+					burger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+				});
+
+				var links = navWrap.querySelectorAll('a');
+				for (var i = 0; i < links.length; i++) {
+					links[i].addEventListener('click', closeMenu);
+				}
+
+				document.addEventListener('click', function (e) {
+					if (!burger.contains(e.target) && !navWrap.contains(e.target)) {
+						closeMenu();
+					}
+				});
+			})();
+			</script>
+			
+			<!-- Content-->
+			<div class="wil-content">
+				
+				<!-- Section -->
+				<section class="awe-section hero-section">
+					<div class="container">
+						
+						<!-- page-title -->
+						<div class="page-title pb-40">
+							<h2 class="page-title__title">Edraw Application - iPad Application with Screencast for Gaming Floor</h2>
+							<p class="page-title__text">Seamless Draw Management with Real-Time Transparency for Gaming Venues</p>
+							<div class="page-title__divider"></div>
+						</div><!-- End / page-title -->
+						
+					</div>
+				</section>
+				<!-- End / Section -->
+				
+				<!-- Section -->
+				<section class="awe-section bg-gray">
+					<div class="container">
+						
+						<!--  -->
+						<div>
+							<div class="work-detail__entry">
+								<div class="reporting-tool">
+									
+										<h3>So, what’s this all about?</h3>
+										<p>
+											Imagine you’re on the gaming floor of a bustling venue. The air’s electric with excitement as players eagerly wait for a big draw announcement. The old way? A chaotic mix of manual processes, delays, and a lack of transparency that left participants skeptical. But with this application, the draw process is transformed into a seamless, engaging, and transparent experience—one that both supervisors and players can trust.
+This app does all the heavy lifting for floor supervisors, enabling them to manage live draws effortlessly. Whether it’s selecting a single winner or multiple, the tool streamlines everything and even broadcasts the entire process onto big screens, ensuring fairness is front and center.
+										</p>
+									
+										<h3>The problem</h3>
+										<p>Gaming venues needed a way to run draws efficiently while keeping participants engaged and confident in the process. The lack of a modern, intuitive system led to delays, confusion, and missed opportunities for interaction with players. Floor supervisors needed something easy, fast, and foolproof.</p>
+										<h3>The solution</h3>
+										<div>
+											<p>This application is like your ultimate draw assistant, designed to make everything flow smoothly:</p>
+											<p><strong>Single & Multiple Winner Selection:</strong> Pick winners with just a few taps, and even customize the rules to fit any event.</p>
+											<p><strong>Screencasting for Transparency:</strong> Project the draw process onto big screens for everyone to see, ensuring fairness and building trust.</p>
+											<p><strong>Simple Controls:</strong> Intuitive buttons and menus make running a draw as easy as pie, so supervisors can focus on the experience, not the logistics.</p>
+											<p><strong>Customizable Settings:</strong> Set eligibility criteria, intervals, or other rules directly in the app—tailor it to any scenario.</p>
+											<p><strong>Bold, Clear Visuals:</strong> Designed for readability in busy environments, with bold fonts and high-contrast colors that keep everyone in the loop.</p>
+										  </div>
+				
+				<h3>The design magic</h3>
+										<div>
+											<p>This isn’t just another app—it’s built to thrive in high-energy, fast-paced venues:</p>
+											<p><strong>Optimized for iPad:</strong> With large touch targets and responsive layouts, it’s perfect for supervisors working in dynamic gaming environments.</p>
+											<p><strong>Real-Time Updates:</strong> Draw results refresh instantly, keeping everyone—supervisors and participants alike—on the same page.</p>
+											<p><strong>User-Centric Interface:</strong> Minimal training required; supervisors can hit the ground running. Large, easy-to-navigate buttons ensure efficiency in every tap.</p>
+										  </div>
+										  
+										<div class="work-img"></div>
+											<img src="assets/img/works/work images/ED1.png" alt=""><br>
+				
+				<h3>The results</h3>
+										<div>
+											<p>This tool brought some serious upgrades to the gaming floor:</p>
+											<p><strong>Boost in Engagement:</strong> With large touch targets and responsive layouts, it’s perfect for supervisors working in dynamic gaming environments.</p>
+											<p><strong>Faster Draws:</strong> Supervisors could conduct draws in a fraction of the time, letting them focus on other floor responsibilities.</p>
+											<p><strong>Overwhelmingly Positive Feedback:</strong> Both participants and supervisors praised the app for its simplicity, speed, and polished design.</p>
+										  </div>
+
+										  <h3>A few pics from the onsite</h3>
+									
+										  <div class="work-img"></div>
+										  <img src="assets/img/works/work images/ED2.png" alt=""><br>
+
+										  <h3>The challenges</h3>
+										  <div>
+											  <p>Creating an app for a high-stakes, fast-paced environment wasn’t without its hurdles. The screencasting feature needed to work flawlessly, and the interface had to be incredibly intuitive to accommodate diverse user skill levels. Through user testing and iterative design, we hit the sweet spot.
+											</p>
+											</div>
+											<h3>What’s next?</h3>
+										  <div>
+											  <p>There’s room to expand with features like automated reminders for upcoming draws, or even gamified elements to keep players engaged between events. The future is all about leveling up the experience!
+											</p>
+											</div>
+											<h3>My role</h3>
+											<div>
+												<p>The usual - from user research to usability testing
+											  </p>
+											  </div>
+				
+				</div>
+						</div>
+						</div><!-- End /  -->
+				
+				</div>
+			<!-- End / Content-->
+				
+				</div>
+		<!-- Vendors-->
+		<script type="text/javascript" src="assets/vendors/jquery/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/imagesloaded/imagesloaded.pkgd.js"></script>
+		<script type="text/javascript" src="assets/vendors/isotope-layout/isotope.pkgd.js"></script>
+		<script type="text/javascript" src="assets/vendors/jquery-one-page/jquery.nav.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/jquery.easing/jquery.easing.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/jquery.matchHeight/jquery.matchHeight.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/masonry-layout/masonry.pkgd.js"></script>
+		<script type="text/javascript" src="assets/vendors/jquery.waypoints/jquery.waypoints.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/swiper/swiper.jquery.js"></script>
+		<script type="text/javascript" src="assets/vendors/menu/menu.js"></script>
+		<script type="text/javascript" src="assets/vendors/typed/typed.min.js"></script>
+		<!-- App-->
+		<script type="text/javascript" src="assets/js/main.js"></script>
+	</body>
+</html>

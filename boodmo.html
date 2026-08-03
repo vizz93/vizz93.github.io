@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Work detail</title>
+		
+    <style>
+        /* Define a custom list marker */
+        ul.custom-list {
+            list-style: none; /* Remove the default bullet points */
+            padding: 0; /* Remove any default padding or margin */
+        }
+
+        ul.custom-list li::before {
+            content: "\2022"; /* Use a Unicode bullet point (•) */
+            color: #FF0000; /* Customize the color of the bullet point */
+            font-size: 20px; /* Customize the size of the bullet point */
+            padding-right: 10px; /* Add some spacing between the bullet point and the text */
+        }
+    </style>
+		<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<!-- Fonts-->
+		<link rel="stylesheet" type="text/css" href="assets/fonts/fontawesome/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/fonts/pe-icon/pe-icon.css">
+		<!-- Vendors-->
+		<link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/grid.css">
+		<link rel="stylesheet" type="text/css" href="assets/vendors/magnific-popup/magnific-popup.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/vendors/swiper/swiper.css">
+		<!-- App & fonts-->
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:400,700">
+		<link rel="stylesheet" type="text/css" id="app-stylesheet" href="assets/css/main.css"><!--[if lt IE 9]>
+			
+		<![endif]-->
+	</head>
+	
+	<body>
+		<div class="page-wrap" id="root">
+			
+			<!-- header -->
+			<header class="header header--fixed">
+				<div class="header__inner">
+					<div class="header__logo"><a href="index.html"><img src="assets/img/logo.png" alt="" style="width: 122px;"/></a></div>
+					<button class="header-burger" id="header-burger" aria-label="Toggle menu" aria-expanded="false">
+						<span></span><span></span><span></span>
+					</button>
+					<div class="header-nav-wrap" id="site-nav-wrap">
+						<nav class="site-nav">
+							<ul class="site-nav__list">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="My_Design_Approach.html">My Design Approach</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header><!-- End / header -->
+			<script>
+			(function () {
+				var burger = document.getElementById('header-burger');
+				var navWrap = document.getElementById('site-nav-wrap');
+				if (!burger || !navWrap) { return; }
+
+				function closeMenu() {
+					burger.classList.remove('is-open');
+					navWrap.classList.remove('is-open');
+					burger.setAttribute('aria-expanded', 'false');
+				}
+
+				burger.addEventListener('click', function (e) {
+					e.preventDefault();
+					e.stopPropagation();
+					var isOpen = burger.classList.toggle('is-open');
+					if (isOpen) {
+						navWrap.classList.add('is-open');
+					} else {
+						navWrap.classList.remove('is-open');
+					}
+					burger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+				});
+
+				var links = navWrap.querySelectorAll('a');
+				for (var i = 0; i < links.length; i++) {
+					links[i].addEventListener('click', closeMenu);
+				}
+
+				document.addEventListener('click', function (e) {
+					if (!burger.contains(e.target) && !navWrap.contains(e.target)) {
+						closeMenu();
+					}
+				});
+			})();
+			</script>
+			
+			<!-- Content-->
+			<div class="wil-content">
+				
+				<!-- Section -->
+				<section class="awe-section hero-section">
+					<div class="container">
+						
+						<!-- page-title -->
+						<div class="page-title pb-40">
+							<h2 class="page-title__title">Revamp of the Boodmo</h2>
+							<p class="page-title__text">Case Study / Mobile App / User Persona </p>
+							<div class="page-title__divider"></div>
+						</div><!-- End / page-title -->
+						
+					</div>
+				</section>
+				<!-- End / Section -->
+				
+				<!-- Section -->
+				<section class="awe-section bg-gray">
+					<div class="container">
+						<!--title-->
+						<div class="title">
+							<h4 class+"title__title">Disclaimer</h4>
+						
+						<!-- End / title -->
+						<div>
+							<div class="work-detail__entry">
+								<p>This is a personal project. I was not commissioned by Boodmo to redesign their app</p><br>
+								<div class="work-img"><img src="assets/img/works/work images/BO1.png" alt=""></div>
+				
+				<h4 class+"title__title">What is it</h4>
+								<p>Boodmo is online marketplace for automotive components, providing genuine and aftermarket replacement parts. It guides customers through the dense market to be the "Spare Parts Expert" and offers a single, trusted channel for car owners and dealers alike.</p><br>
+				
+				<h4 class+"title__title">Problem Statement</h4>
+								<p>Boodmo needs to improve its sales and customer engagement. The app's interface is dated and complicated, which has led to a poor brand reputation.<br><br>The company should identify the root causes of low sales and customer engagement, simplify the app's interface, and implement effective marketing strategies to increase revenue and customer satisfaction.</p><br>
+				
+				<h4 class+"title__title">User Reviews</h4>
+								<div class="work-img"><img src="assets/img/works/work images/BO2.png" alt=""></div>
+								<h6>Findings from user reviews</h6>
+								<ul class="custom-list">
+								<li>outdated app design</li>
+								<li>navigation is not user friendly</li>
+								<li>expected delivery date not shown</li>
+								<li>no option to track the shipment</li>
+								<li>ads appearing on all pages</li>
+								<li>select car specifications every time</li>
+								<li>pushes unnecessary accessories</li>
+								<li>unable to find car parts that fits</li>
+								</ul>
+								
+								<h4 class+"title__title">User Persona</h4>
+								<div class="work-img"><img src="assets/img/works/work images/BO3.png" alt=""></div>
+				
+				<h4 class+"title__title">User Journey</h4>
+								<p>I developed a user journey map to capture crucial pain points and challenge users may encounter and cause frustration</p>
+
+								<div class="work-img"><img src="assets/img/works/work images/BO4.png" alt=""></div>
+
+								<h4 class+"title__title">Wireframes</h4>
+								<div class="work-img"><img src="assets/img/works/work images/BO5.png" alt=""></div>
+				
+				<a href="https://www.figma.com/file/EDQJPpOiYBn8moVhLxqZoa/Boodmo?type=design&node-id=0%3A1&mode=design&t=MBOXi8o44A8qfRYs-1"> 
+									<b> Check out the Figma Design</b> 
+								</a>
+
+								<h4 class+"title__title">Comparision</h4>
+								<p>User can see a lot of things in front, should i search by car? Search by vin? What's vin? Search by air-conditioning? How do I know it fits my car? Is the questions that will come up when you open the boodmo<br><br>I have redesigned it to just one question “who is your car maker?” And taking the user from there<br><br>If the user has already saved his car he can look it up in the garage which is in reach of the thumb area (fitt’s law) for which the user gives a personal nickname, which I will be using it in further screens, appealing to the user that he is buying the parts for his favourite car.</p><br>
+								<div class="work-img"><img src="assets/img/works/work images/BO6.png" alt=""></div>
+
+								<p>The PDP page - In the existing version there is no segments, no ratings for the product, no discount details which are all available in other eCommerce sites, this will convince the user that boodmo is upto the mark.<br><br>I have added installation guide video on the product which is going to appeal to the user also I am mentioning the nick name of the car so that user has a feel that he is not buying for just an other car he is buying for his bumblebee.<br><br>So I was searching for a product and out of the blue i get suggested to sell my car!! <b>Why!!!</b> Why would I sell my car just when I was looking for the spares, this will make users to rage quit!</p><br>
+								<div class="work-img"><img src="assets/img/works/work images/BO7.png" alt=""></div>
+
+								<p>And after I have added the product to the cart i don't have any idea or indication that it has been added, so in my design once the user adds the product to cart it will start showing the quantity added<br><br>Also now once a product is added, an option to buy the extra stuffs like nuts and bolts are suggested</p>
+								<div class="work-img"><img src="assets/img/works/work images/BO8.png" alt=""></div>
+
+								<p>Say user wants to buy a part for his both cars, at the checkout wouldn't it be nice that user can see the details that helps the user?? How about not just showing the product instead segmenting the products for each car isn't that a delight!</p>
+								<div class="work-img"><img src="assets/img/works/work images/BO9.png" alt=""></div>
+
+								<p>Finally reaching to payment page, what if the user doesn't have Paytm! Though it is going to take the user to a payment gateway where user can use various payment methods, this might make users to bail out!<br><br>Also there will be a group of users who won't know what is Razorpay,<br><br>How about straight up giving various options of payment methods! That will reduce the chance of users bailing out!</p>
+								<div class="work-img"><img src="assets/img/works/work images/BO10.png" alt=""></div>
+
+								<p>I have also included a new feature of hiring an expert based on which product the user is buying, this will help for the users who are not within a reach of an expert, or users who might not able to do the job themselves!</p>
+								<div class="work-img"><img src="assets/img/works/work images/BO11.png" alt=""></div>
+
+								<h4 class+"title__title">Conclusion</h4>
+								<p>In conclusion, this UX case study has demonstrated the importance of user-centered design. With user research and testing, I was able to identify pain points and design solutions that addressed the needs of the target audience. Now the application is designed to provide an intuitive and seamless user experience, allowing users to easily search and purchase car spare parts.<br><br>Overall, this project highlights the value of user-centered design in creating products that meet the needs and expectations of the end-users. By prioritizing user needs and feedback throughout the design process, I was able to create an application that meets its objectives.<br><br> As such, prioritizing user-centered design principles will provide maximum value and impact to their users.</p>
+
+								<h4 class+"title__title">Future Scope</h4>
+								<ul class="custom-list">
+								<li>Personalization: Personalized recommendations based on past purchases, saved search preferences, or suggested parts based on the user's car model.</li>
+								<li>Chatbot Integration: Chatbot feature to help users get quick answers to their queries, provide them with product suggestions, and guide them through the purchase process, track their orders.</li>
+								<li>Improved Search Functionality: Adding filters based on the part's condition (for aftermarket parts), brand, and price range. It could also include a predictive search.</li>
+								<li>Expanded Product Range: Expanding the product range to include motorcycles spares and accessories</li>
+								</ul>
+
+								<div class="work-img"><img src="assets/img/works/work images/BO12.png" alt=""></div>
+				
+				</div>
+							
+						</div><!-- End /  -->
+				
+				</div>
+			<!-- End / Content-->
+				
+				</div>
+		<!-- Vendors-->
+		<script type="text/javascript" src="assets/vendors/jquery/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/imagesloaded/imagesloaded.pkgd.js"></script>
+		<script type="text/javascript" src="assets/vendors/isotope-layout/isotope.pkgd.js"></script>
+		<script type="text/javascript" src="assets/vendors/jquery-one-page/jquery.nav.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/jquery.easing/jquery.easing.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/jquery.matchHeight/jquery.matchHeight.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/masonry-layout/masonry.pkgd.js"></script>
+		<script type="text/javascript" src="assets/vendors/jquery.waypoints/jquery.waypoints.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/swiper/swiper.jquery.js"></script>
+		<script type="text/javascript" src="assets/vendors/menu/menu.js"></script>
+		<script type="text/javascript" src="assets/vendors/typed/typed.min.js"></script>
+		<!-- App-->
+		<script type="text/javascript" src="assets/js/main.js"></script>
+	</body>
+</html>

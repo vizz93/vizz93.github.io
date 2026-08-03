@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>About</title>
+		<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<!-- Fonts-->
+		<link rel="stylesheet" type="text/css" href="assets/fonts/fontawesome/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/fonts/pe-icon/pe-icon.css">
+		<!-- Vendors-->
+		<link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/grid.css">
+		<link rel="stylesheet" type="text/css" href="assets/vendors/magnific-popup/magnific-popup.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/vendors/swiper/swiper.css">
+		<!-- App & fonts-->
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:400,700">
+		<link rel="stylesheet" type="text/css" id="app-stylesheet" href="assets/css/main.css"><!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	
+	<body>
+		<div class="page-wrap" id="root">
+			
+			<!-- header -->
+			<header class="header header--fixed">
+				<div class="header__inner">
+					<div class="header__logo"><a href="index.html"><img src="assets/img/logo.png" alt="" style="width: 122px;"/></a></div>
+					<button class="header-burger" id="header-burger" aria-label="Toggle menu" aria-expanded="false">
+						<span></span><span></span><span></span>
+					</button>
+					<div class="header-nav-wrap" id="site-nav-wrap">
+						<nav class="site-nav">
+							<ul class="site-nav__list">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="about.html" class="is-active">About</a></li>
+								<li><a href="My_Design_Approach.html">My Design Approach</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header><!-- End / header -->
+			<script>
+			(function () {
+				var burger = document.getElementById('header-burger');
+				var navWrap = document.getElementById('site-nav-wrap');
+				if (!burger || !navWrap) { return; }
+
+				function closeMenu() {
+					burger.classList.remove('is-open');
+					navWrap.classList.remove('is-open');
+					burger.setAttribute('aria-expanded', 'false');
+				}
+
+				burger.addEventListener('click', function (e) {
+					e.preventDefault();
+					e.stopPropagation();
+					var isOpen = burger.classList.toggle('is-open');
+					if (isOpen) {
+						navWrap.classList.add('is-open');
+					} else {
+						navWrap.classList.remove('is-open');
+					}
+					burger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+				});
+
+				var links = navWrap.querySelectorAll('a');
+				for (var i = 0; i < links.length; i++) {
+					links[i].addEventListener('click', closeMenu);
+				}
+
+				document.addEventListener('click', function (e) {
+					if (!burger.contains(e.target) && !navWrap.contains(e.target)) {
+						closeMenu();
+					}
+				});
+			})();
+			</script>
+			
+			<!-- Content-->
+			<div class="wil-content">
+				
+				<!-- Section -->
+				<section class="awe-section hero-section">
+					<div class="container">
+						
+						<!-- page-title -->
+						<div class="page-title pb-40">
+							<h2 class="page-title__title">About me</h2>
+							<p class="page-title__text">Narrating my adventure</p>
+							<div class="page-title__divider"></div>
+						</div><!-- End / page-title -->
+						
+					</div>
+				</section>
+				<!-- End / Section -->
+				
+				<!-- Section -->
+				<section class="awe-section bg-gray">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 col-md-12">
+								<div style="position: relative; width: 100%; height: 380px; overflow: hidden; border-radius: 6px; margin-bottom: 40px;">
+									<img src="assets/img/mypic.jpg?w=1260&amp;h=750&amp;auto=compress&amp;cs=tinysrgb" alt="" style="position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; width: auto; height: auto; transform: translate(-50%, -50%); object-fit: cover; object-position: center 25%;">
+									<div style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(247,247,247,1) 0%, rgba(247,247,247,0) 12%, rgba(247,247,247,0) 88%, rgba(247,247,247,1) 100%), linear-gradient(180deg, rgba(247,247,247,0) 70%, rgba(247,247,247,0.95) 100%);"></div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
+
+								<!-- title -->
+								<div class="title">
+									<h2 class="title__title">My tools</h2>
+								</div><!-- End / title -->
+
+								<div class="grid-css grid-css--masonry tools-grid" data-col-lg="10" data-col-md="10" data-col-sm="10" data-col-xs="10" data-gap="5">
+									<div class="grid__inner">
+										<div class="grid-sizer"></div>
+										<div class="grid-item">
+											<div class="grid-item__inner">
+												<div class="grid-item__content-wrapper">
+
+													<!-- work -->
+													<div class="work"><a href="#">
+
+															<!-- hoverbox ef-slide-bottom -->
+															<div class="hoverbox ef-move-bottom light">
+
+																<!-- hb_front -->
+																<div class="hb_front"><img src="assets/img/works/Works-thumb/grid1.png" alt=""/>
+																</div><!-- End / hb_front -->
+																<!-- hb_back -->
+																<div class="hb_back">
+																	<h7><span class="work__text">Figma<br>XD<br>Sketch</h7></span>
+																</div><!-- End / hb_back -->
+				
+				</div><!-- End / hoverbox ef-slide-bottom -->
+															</a>
+													</div><!-- End / work -->
+
+												</div>
+											</div>
+										</div>
+
+										<div class="grid-item">
+											<div class="grid-item__inner">
+												<div class="grid-item__content-wrapper">
+
+													<!-- work -->
+													<div class="work"><a href="#">
+
+															<!-- hoverbox ef-slide-bottom -->
+															<div class="hoverbox ef-move-bottom light">
+
+																<!-- hb_front -->
+																<div class="hb_front"><img src="assets/img/works/Works-thumb/grid2.png" alt=""/>
+																</div><!-- End / hb_front -->
+																<!-- hb_back -->
+																<div class="hb_back">
+																	<h7><span class="work__text">Illustrator</h7></span>
+																</div><!-- End / hb_back -->
+				
+				</div><!-- End / hoverbox ef-slide-bottom -->
+															</a>
+													</div><!-- End / work -->
+
+												</div>
+											</div>
+										</div>
+										<div class="grid-item">
+											<div class="grid-item__inner">
+												<div class="grid-item__content-wrapper">
+
+													<!-- work -->
+													<div class="work"><a href="#">
+
+															<!-- hoverbox ef-slide-bottom -->
+															<div class="hoverbox ef-move-bottom light">
+
+																<!-- hb_front -->
+																<div class="hb_front"><img src="assets/img/works/Works-thumb/grid3.png" alt=""/>
+																</div><!-- End / hb_front -->
+																<!-- hb_back -->
+																<div class="hb_back">
+																	<h7><span class="work__text">Photoshop</h7></span>
+																</div><!-- End / hb_back -->
+				
+				</div><!-- End / hoverbox ef-slide-bottom -->
+															</a>
+													</div><!-- End / work -->
+
+												</div>
+											</div>
+										</div>
+										<div class="grid-item">
+											<div class="grid-item__inner">
+												<div class="grid-item__content-wrapper">
+
+													<!-- work -->
+													<div class="work"><a href="#">
+
+															<!-- hoverbox ef-slide-bottom -->
+															<div class="hoverbox ef-move-bottom light">
+
+																<!-- hb_front -->
+																<div class="hb_front"><img src="assets/img/works/Works-thumb/grid4.png" alt=""/>
+																</div><!-- End / hb_front -->
+																<!-- hb_back -->
+																<div class="hb_back">
+																	<h7><span class="work__text">After Effects</h7></span>
+																</div><!-- End / hb_back -->
+				
+				</div><!-- End / hoverbox ef-slide-bottom -->
+															</a>
+													</div><!-- End / work -->
+
+												</div>
+											</div>
+										</div>
+
+										<div class="grid-item">
+											<div class="grid-item__inner">
+												<div class="grid-item__content-wrapper">
+
+													<!-- work -->
+													<div class="work"><a href="#">
+
+															<!-- hoverbox ef-slide-bottom -->
+															<div class="hoverbox ef-move-bottom light">
+
+																<!-- hb_front -->
+																<div class="hb_front"><img src="assets/img/works/Works-thumb/grid6.png" alt=""/>
+																</div><!-- End / hb_front -->
+																<!-- hb_back -->
+																<div class="hb_back">
+																	<h7><span class="work__text">Miro</h7></span>
+																</div><!-- End / hb_back -->
+				
+				</div><!-- End / hoverbox ef-slide-bottom -->
+															</a>
+													</div><!-- End / work -->
+
+												</div>
+											</div>
+										</div>
+										<div class="grid-item">
+											<div class="grid-item__inner">
+												<div class="grid-item__content-wrapper">
+
+													<!-- work -->
+													<div class="work"><a href="#">
+
+															<!-- hoverbox ef-slide-bottom -->
+															<div class="hoverbox ef-move-bottom light">
+
+																<!-- hb_front -->
+																<div class="hb_front"><img src="assets/img/works/Works-thumb/grid7.png" alt=""/>
+																</div><!-- End / hb_front -->
+																<!-- hb_back -->
+																<div class="hb_back">
+																	<h7><span class="work__text">HTML CSS</h7></span>
+																</div><!-- End / hb_back -->
+				
+				</div><!-- End / hoverbox ef-slide-bottom -->
+															</a>
+													</div><!-- End / work -->
+
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+
+								<div class="mt-30">
+
+									<!-- progress -->
+									<div class="progress">
+										<h5 class="progress__title">Design</h5>
+										<div class="progress__wrap">
+											<div class="progress__bar" data-progress-percent="90" data-timing="ease" data-duration="1000" data-delay="500"></div><span class="progress__number">90%</span>
+										</div>
+									</div><!-- End / progress -->
+				
+				<!-- progress -->
+									<div class="progress">
+										<h5 class="progress__title">Development</h5>
+										<div class="progress__wrap">
+											<div class="progress__bar" data-progress-percent="30" data-timing="ease" data-duration="1000" data-delay="500"></div><span class="progress__number">30%</span>
+										</div>
+									</div><!-- End / progress -->
+				
+				<section class="experience-section">
+										<h2 class="about__title">Experience</h2>
+
+										<div class="experience">
+										  <p class="about__subtitle"><b>September 2025 - Present</b></p>
+										  <h3><b>Technical Support Assistant</b> at IDC, Abu Dhabi — Client: ADNOC Refining</h3>
+										  <ul class="experience__list">
+											<li><strong>Coordinated:</strong> Employee compliance activities across operations teams, including mandatory training, medical examinations, and WMS renewals, maintaining accurate supporting documentation.</li>
+											<li><strong>Designed and maintained:</strong> A visual progress-tracking dashboard for startup and shutdown reporting, translating operational data into clear, presentation-ready visuals.</li>
+											<li><strong>Collaborated:</strong> With operations supervisors to produce an animated process visualization for the Catalytic Regeneration unit, applying motion design to technical content.</li>
+											<li><strong>Handled:</strong> Confidential operational documentation in line with information security protocols.</li>
+										  </ul>
+										</div>
+
+										<div class="experience">
+										  <p class="about__subtitle"><b>May 2023 - August 2025</b></p>
+										  <h3><b>UI/UX & Graphic Designer</b> at Touchtier Technologies, Madurai — Client: RedeemX, Australia</h3>
+										  <ul class="experience__list">
+											<li><strong>Designed and implemented:</strong> A user-centric gambling monitoring application from scratch, utilizing user research and an iterative design process to incorporate user feedback.</li>
+											<li><strong>Created:</strong> A kiosk application for club patron management with a member card printing module, boosting a 60% increase in member usage.</li>
+											<li><strong>Delivered:</strong> UI/UX, graphic, motion, and print design for venue management products — kiosk and mobile interfaces, dashboards, promotional assets, machine branding, exhibition graphics, product videos, and print collateral — coordinating proofs and deliverables with cross-functional and client stakeholders while maintaining design consistency under tight production deadlines.</li>
+											<li><strong>Developed:</strong> A comprehensive club management and reporting application, integrating PowerBI for data analysis and reporting.</li>
+											<li><strong>Conducted:</strong> User interviews, journey mapping, and A/B testing within Agile workflows to inform design decisions.</li>
+										  </ul>
+										</div>
+
+										<div class="experience">
+										  <p class="about__subtitle"><b>August 2021 - April 2023</b></p>
+										  <h3><b>UI & Graphic Designer</b> at Zeomega, Bangalore</h3>
+										  <ul class="experience__list">
+											<li><strong>Designed:</strong> Requirements and features from FRS documents to wireframes, prototypes, and style guides for a population health and care management platform.</li>
+											<li><strong>Collaborated:</strong> Closely with developers to translate business requirements into intuitive, user-friendly layouts.</li>
+											<li><strong>Spearheaded:</strong> The team as Associate Scrum Master, facilitating scrum ceremonies.</li>
+										  </ul>
+										</div>
+
+										<div class="experience">
+										  <p class="about__subtitle"><b>September 2020 - July 2021</b></p>
+										  <h3><b>Graphic Designer</b> at TechArdors, Coimbatore</h3>
+										  <ul class="experience__list">
+											<li><strong>Designed:</strong> Wireframes, UI components, illustrations, and graphic assets for a client reporting application.</li>
+											<li><strong>Prepared:</strong> Visual assets to client specification, managing revisions and approvals.</li>
+											<li>Worked in a product-based company with a fast-paced agile environment, ideating new features, creating high-fidelity screens, mockups, BRDs, reviewing UI/UX, handling UAT, managing agile ceremonies, and creating development boards and user stories.</li>
+										  </ul>
+										</div>
+
+									</section>
+
+									<section class="education-section">
+										<h2 class="about__title">Education</h2>
+
+										<div class="education">
+										  <h3>M.B.A from SRM Easwari</h3>
+										  <ul class="education__list">
+											<li>Made killer presentations that impressed the last-bench buddies.</li>
+										  </ul>
+										</div>
+
+										<div class="education">
+										  <h3>Bachelor’s in Mechanical Engineering from M.I.E.T</h3>
+										  <ul class="education__list">
+											<li>Loved learning engineering drawings and 3D modeling tools.</li>
+										  </ul>
+										</div>
+									</section>
+
+								</div><!-- End / mt-30 -->
+
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- End / Section -->
+				
+			</div>
+			<!-- End / Content-->
+				
+				<!-- Vendors-->
+		<script type="text/javascript" src="assets/vendors/jquery/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/imagesloaded/imagesloaded.pkgd.js"></script>
+		<script type="text/javascript" src="assets/vendors/isotope-layout/isotope.pkgd.js"></script>
+		<script type="text/javascript" src="assets/vendors/jquery-one-page/jquery.nav.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/jquery.easing/jquery.easing.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/jquery.matchHeight/jquery.matchHeight.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/masonry-layout/masonry.pkgd.js"></script>
+		<script type="text/javascript" src="assets/vendors/jquery.waypoints/jquery.waypoints.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/swiper/swiper.jquery.js"></script>
+		<script type="text/javascript" src="assets/vendors/menu/menu.js"></script>
+		<script type="text/javascript" src="assets/vendors/typed/typed.min.js"></script>
+		<!-- App-->
+		<script type="text/javascript" src="assets/js/main.js"></script>
+	</body>
+</html>

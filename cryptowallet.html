@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Work detail</title>
+		<style>
+        /* Define a custom list marker */
+        ul.custom-list {
+            list-style: none; /* Remove the default bullet points */
+            padding: 0; /* Remove any default padding or margin */
+        }
+
+        ul.custom-list li::before {
+            content: "\2022"; /* Use a Unicode bullet point (•) */
+            color: #FF0000; /* Customize the color of the bullet point */
+            font-size: 20px; /* Customize the size of the bullet point */
+            padding-right: 10px; /* Add some spacing between the bullet point and the text */
+        }
+    </style>
+		<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<!-- Fonts-->
+		<link rel="stylesheet" type="text/css" href="assets/fonts/fontawesome/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/fonts/pe-icon/pe-icon.css">
+		<!-- Vendors-->
+		<link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/grid.css">
+		<link rel="stylesheet" type="text/css" href="assets/vendors/magnific-popup/magnific-popup.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/vendors/swiper/swiper.css">
+		<!-- App & fonts-->
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:400,700">
+		<link rel="stylesheet" type="text/css" id="app-stylesheet" href="assets/css/main.css"><!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	
+	<body>
+		<div class="page-wrap" id="root">
+			
+			<!-- header -->
+			<header class="header header--fixed">
+				<div class="header__inner">
+					<div class="header__logo"><a href="index.html"><img src="assets/img/logo.png" alt="" style="width: 122px;"/></a></div>
+					<button class="header-burger" id="header-burger" aria-label="Toggle menu" aria-expanded="false">
+						<span></span><span></span><span></span>
+					</button>
+					<div class="header-nav-wrap" id="site-nav-wrap">
+						<nav class="site-nav">
+							<ul class="site-nav__list">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="My_Design_Approach.html">My Design Approach</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header><!-- End / header -->
+			<script>
+			(function () {
+				var burger = document.getElementById('header-burger');
+				var navWrap = document.getElementById('site-nav-wrap');
+				if (!burger || !navWrap) { return; }
+
+				function closeMenu() {
+					burger.classList.remove('is-open');
+					navWrap.classList.remove('is-open');
+					burger.setAttribute('aria-expanded', 'false');
+				}
+
+				burger.addEventListener('click', function (e) {
+					e.preventDefault();
+					e.stopPropagation();
+					var isOpen = burger.classList.toggle('is-open');
+					if (isOpen) {
+						navWrap.classList.add('is-open');
+					} else {
+						navWrap.classList.remove('is-open');
+					}
+					burger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+				});
+
+				var links = navWrap.querySelectorAll('a');
+				for (var i = 0; i < links.length; i++) {
+					links[i].addEventListener('click', closeMenu);
+				}
+
+				document.addEventListener('click', function (e) {
+					if (!burger.contains(e.target) && !navWrap.contains(e.target)) {
+						closeMenu();
+					}
+				});
+			})();
+			</script>
+			
+			<!-- Content-->
+			<div class="wil-content">
+				
+				<!-- Section -->
+				<section class="awe-section hero-section">
+					<div class="container">
+						
+						<!-- page-title -->
+						<div class="page-title pb-40">
+							<h2 class="page-title__title">Coinie - Crypto Wallet</h2>
+							<p class="page-title__text">Cryptocurrency / Mobile App </p>
+							<div class="page-title__divider"></div>
+						</div><!-- End / page-title -->
+						
+					</div>
+				</section>
+				<!-- End / Section -->
+				
+				<!-- Section -->
+				<section class="awe-section bg-gray">
+					<div class="container">
+						
+						<!--  -->
+						<div>
+							<div class="work-img"><img src="assets/img/works/work images/CC1.png" alt=""></div>
+							<div class="work-detail__entry">
+								<h4 class+"title__title">What is it</h4>
+								<p>I use cryptocurrency apps and I have some cryptocurrency myself, but I'm still not really clear on some part of how it works. I've always had to get in touch with other cryptocurrency users to get clarification, which is what inspired me to build this. The primary goal of this app's design was to reduce the learning curve for crypto-apps and make DEX wallets simpler and easier to use for the average user who is not crypto-savvy.</p><br>
+
+								<h4 class+"title__title">What to do</h4>
+								<p>Analysing and improving the user experience of crypto wallets was the challenge. The intention of Coinie, a decentralised exchange wallet, is to enhance user interaction with DEXs. An elegant design solution that is straightforward but powerful is anticipated as the outcome.</p><br>
+
+								<h4 class+"title__title">What I Did</h4>
+								<p>In design thinking iteratively, we try to understand the user, question presumptions, and redefine challenges in an effort to find alternate approaches and answers that might not be immediately obvious given our current level of understanding. I'll walk you through the five stages of the Design Thinking process as I designed Coinie.</p><br>
+
+								<div class="work-img"><img src="assets/img/works/work images/CC2.png" alt=""></div>
+
+								<ul class="custom-list">
+								<li>Empathize — connect with your users</li>
+								<li>Define — your users’ needs, their problems, and your insights</li>
+								<li>Ideate — by challenging assumptions and creating ideas for innovative solutions</li>
+								<li>Prototype — start creating solutions</li>
+								<li>Test — to know if your solutions works</li>
+								</ul>
+
+								<h4 class+"title__title">Empathize</h4>
+								<p>I was able to see things from other people's perspectives and be receptive to their experiences. In order to fully understand the user's wants and perspectives, I had to immerse myself in their experiences and thoughts. I began my study by reading articles, books, and videos to understand everything I could about blockchain technology and the user experience (UX) problems encountered in this sector. In order to investigate the current pattern and flow (competitor research), I also took a look at of decentralised exchange platforms that are already in use. I explored some well-known DEX wallets, including<br>
+									<ul class="custom-list">
+								<li>MetaMask</li>
+								<li>Trust Wallet</li>
+								<li>Safepal</li>
+								<li>Enjin Wallet</li>
+								</ul>
+								<br>
+								I chatted with a handful of users, including experienced cryptocurrency traders, occasional wallet users, and cryptocurrency enthusiasts who aren't completely immersed in the technology. I began by obtaining the user's demographic information to make sure they fell within my target market. quizzed about their knowledge of blockchain technology, their experience using DEX wallets and cryptocurrencies, the problems they have with their wallets, how they think it can be better, what doesn't work for them, etc.
+								<br>
+								<b>Findings -</b>
+								<br>
+								<ul class="custom-list">
+								<li>Potential customers are typically doubtful about the subject of cryptocurrencies because it is still quite mysterious to them.</li>
+								<li>Due to backup problems, some users no longer have access to their wallets.</li>
+								<li>DEXs are not user-friendly for beginners and are better suited for traders who have experience in the cryptocurrency market. Users complained the over use of cryptocurrency platforms for basic tasks. They need a single platform that enables them to manage their cryptocurrency holdings without switching between them, as well as data visualisation of their holdings and earnings.</li>
+								<li>DEXs may occasionally charge higher transaction fees</li>
+								<li>The majority of DEX wallets don't offer a simple way to monitor transactions or activity.</li>
+								<li>Users experience lengthy order matching wait times as a result of the increased transaction volume.</li>
+								<li>Users desire to have multiple wallets within a same app so they may keep separate assets from family or use it like bank applications by having multiple accounts for different purposes. DEX platforms are not simple or easy to use and require a high level of expertise</li>
+								</ul>
+								<br>
+								Even if some of the problems mentioned are technological, I think certain user experience improvements would greatly increase the number of people who use this technology.
+								</p><br>
+
+								<h4 class+"title__title">Define</h4>
+								<p>I put together the knowledge I developed and received during the Empathise stage in this stage. Here, I examined and analysed my research-related revelations and findings in order to pinpoint the main issues. I identified my challenges and the people for whom I am solving them.
+									<br><br>
+									From competitor research, I found that the majority of these platforms don't truly take beginners into account or target those who are unfamiliar with blockchain technology or cryptocurrencies. People that are involved in the blockchain community are familiar with how they operate, but the average person cannot comprehend or construct a smart contract. For some consumers, this strategy has been a huge turnoff and barrier to entry, which has reduced their interest in trading cryptocurrencies.
+									<br><br>
+								In order to enable cryptocurrency traders, holders, and other potential users make trading decisions more effectively, exchange, transmit, or receive coins, and backup data more securely, it is my aim to create Coinie, a smooth, intuitive, and simple-to-use multi-wallet platform.</p><br>
+
+								<h4 class+"title__title">Ideate</h4>
+								<p>I had previously analysed the research insights and observations throughout this phase, understood the user's demands, and was prepared to begin coming up with suggestions. I had to brainstorm and come up with potential solutions to the issue during the ideation stage, which needed a lot of thought.<br><br>
+									<b>Some Ideas</b>
+									<ul class="custom-list">
+								<li>Users prefer multi-wallet apps and tend to have multiple coins, which should be added</li>
+								<li>A built-in web 3 browser for secure browser and easy access dApps to browse and trade more securely</li>
+								<li>Extra backup options</li>
+								<li>Integrated charts and graphs and other trading options to help a user make decisions faster</li>
+								<li>The majority of DEX wallets don't offer a simple way to monitor transactions or activity.An intuitive onboarding to ease new users into the app and tooltips to guide a user’s decision-making every step of the way.</li>
+								</ul>
+								</p>
+
+								<h4 class+"title__title">5 principles for designing a great UX for blockchain Technology</h4>
+								<ul class="custom-list">
+								<li>Designing for understanding - All the information offered should be important and understandable by simplifying the message for the more casual users and to users who don’t have any prior technical expertise. People want to benefit from blockchain technology, but straightforward communication is restricted by unclear UX that is extremely technical in nature.</li>
+								<li>Designing for trust - Maintaining the user's trust is crucial when working with extremely sensitive data. Users must believe that the applications are stable, dependable, and trustworthy.</li>
+								<li>Designing for communication - The applications' language should be clear, brief, and consistent with how users naturally communicate.</li>
+								<li>Designing for consistency - User experience must be visually consistent across different product. Applying common design patterns reduces the amount of learning that the user must do, and having a consistent design makes users feel at ease.</li>
+								<li>Designing for exposure - Enlighten users about your product; they must be made aware of the functioning of the application processes. To help the user enhance their operations, we should explain how blockchain works for them.</li>
+								</ul><br>
+
+								<a href="https://www.figma.com/file/timbRPKDfZOhHBorEQvMJ8/COINIE?type=design&node-id=0%3A1&mode=design&t=kv7Uv8yO5zsAEe8i-1"> 
+									<b> Check out the Figma Design</b> 
+								</a>
+								<br><br>
+				
+				<div class="work-img"><img src="assets/img/works/work images/CC3.png" alt=""></div>
+
+								<h6 class+"title__title">Working on screens will update soon - stay tuned!🧐</h6>
+
+								<div class="work-img"><img src="assets/img/works/work images/CC4.png" alt=""></div>
+
+							</div>
+							
+						</div><!-- End /  -->
+				
+				</div>
+			<!-- End / Content-->
+				
+				</div>
+		<!-- Vendors-->
+		<script type="text/javascript" src="assets/vendors/jquery/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/imagesloaded/imagesloaded.pkgd.js"></script>
+		<script type="text/javascript" src="assets/vendors/isotope-layout/isotope.pkgd.js"></script>
+		<script type="text/javascript" src="assets/vendors/jquery-one-page/jquery.nav.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/jquery.easing/jquery.easing.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/jquery.matchHeight/jquery.matchHeight.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/masonry-layout/masonry.pkgd.js"></script>
+		<script type="text/javascript" src="assets/vendors/jquery.waypoints/jquery.waypoints.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/swiper/swiper.jquery.js"></script>
+		<script type="text/javascript" src="assets/vendors/menu/menu.js"></script>
+		<script type="text/javascript" src="assets/vendors/typed/typed.min.js"></script>
+		<!-- App-->
+		<script type="text/javascript" src="assets/js/main.js"></script>
+	</body>
+</html>

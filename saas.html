@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Work detail</title>
+		    <style>
+        /* Define a custom list marker */
+        ul.custom-list {
+            list-style: none; /* Remove the default bullet points */
+            padding: 0; /* Remove any default padding or margin */
+        }
+
+        ul.custom-list li::before {
+            content: "\2022"; /* Use a Unicode bullet point (•) */
+            color: #FF0000; /* Customize the color of the bullet point */
+            font-size: 20px; /* Customize the size of the bullet point */
+            padding-right: 10px; /* Add some spacing between the bullet point and the text */
+        }
+    </style>
+		<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<!-- Fonts-->
+		<link rel="stylesheet" type="text/css" href="assets/fonts/fontawesome/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/fonts/pe-icon/pe-icon.css">
+		<!-- Vendors-->
+		<link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/grid.css">
+		<link rel="stylesheet" type="text/css" href="assets/vendors/magnific-popup/magnific-popup.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/vendors/swiper/swiper.css">
+		<!-- App & fonts-->
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:400,700">
+		<link rel="stylesheet" type="text/css" id="app-stylesheet" href="assets/css/main.css"><!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	
+	<body>
+		<div class="page-wrap" id="root">
+			
+			<!-- header -->
+			<header class="header header--fixed">
+				<div class="header__inner">
+					<div class="header__logo"><a href="index.html"><img src="assets/img/logo.png" alt="" style="width: 122px;"/></a></div>
+					<button class="header-burger" id="header-burger" aria-label="Toggle menu" aria-expanded="false">
+						<span></span><span></span><span></span>
+					</button>
+					<div class="header-nav-wrap" id="site-nav-wrap">
+						<nav class="site-nav">
+							<ul class="site-nav__list">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="My_Design_Approach.html">My Design Approach</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header><!-- End / header -->
+			<script>
+			(function () {
+				var burger = document.getElementById('header-burger');
+				var navWrap = document.getElementById('site-nav-wrap');
+				if (!burger || !navWrap) { return; }
+
+				function closeMenu() {
+					burger.classList.remove('is-open');
+					navWrap.classList.remove('is-open');
+					burger.setAttribute('aria-expanded', 'false');
+				}
+
+				burger.addEventListener('click', function (e) {
+					e.preventDefault();
+					e.stopPropagation();
+					var isOpen = burger.classList.toggle('is-open');
+					if (isOpen) {
+						navWrap.classList.add('is-open');
+					} else {
+						navWrap.classList.remove('is-open');
+					}
+					burger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+				});
+
+				var links = navWrap.querySelectorAll('a');
+				for (var i = 0; i < links.length; i++) {
+					links[i].addEventListener('click', closeMenu);
+				}
+
+				document.addEventListener('click', function (e) {
+					if (!burger.contains(e.target) && !navWrap.contains(e.target)) {
+						closeMenu();
+					}
+				});
+			})();
+			</script>
+			
+			<!-- Content-->
+			<div class="wil-content">
+				
+				<!-- Section -->
+				<section class="awe-section hero-section">
+					<div class="container">
+						
+						<!-- page-title -->
+						<div class="page-title pb-40">
+							<h2 class="page-title__title">A saas Project</h2>
+							<p class="page-title__text">Web App / wireframe </p>
+							<div class="page-title__divider"></div>
+						</div><!-- End / page-title -->
+						
+					</div>
+				</section>
+				<!-- End / Section -->
+				
+				<!-- Section -->
+				<section class="awe-section bg-gray">
+					<div class="container">
+						
+						<!--  -->
+						<div>
+							<div class="work-detail__entry">
+								<h5>The idea is to create a SaaS tool for Personalised ecommerce experience</h5>
+								<br>
+								<h2>Research Findings</h2>
+								<br>
+								<h4>Needs</h4>
+								<br>
+								<p><b>Customer data management:</b> To provide personalized experiences, I would need to manage customer data effectively, including their purchase history, preferences, and behaviour across multiple channels.
+									<br><br>
+									<b>Omni-channel capabilities:</b> I would need to be able to provide a seamless customer experience across all channels, including email, social media, website, and mobile app.
+									<br><br>
+									<b>Marketing automation:</b> Utilizing marketing automation tools would help me deliver personalized content and offers to customers based on their interests and behaviours.
+									<br><br>
+									<b>Analytics and reporting:</b> Analysing customer data and tracking customer behaviour across channels would be necessary to optimize and improve the customer experience.
+									<br><br>
+								<b>Integration with existing systems:</b> Integrating personalized customer experiences into existing business systems, such as inventory management and order processing, would help ensure a seamless customer experience.</p>
+
+								<h4>Preferences</h4>
+								<br>
+								<p><b>Customisation:</b> I would prefer a customer experience platform that allows me to customize the customer journey based on customer preferences and behaviour.
+									<br><br>
+									<b>Easy to use:</b> A user-friendly platform that is easy to use and implement would be preferred, as I may not have extensive technical expertise.
+									<br><br>
+									<b>Cost-effective:</b> Cost is always a consideration for SMEs, so a cost-effective solution that provides a high return on investment would be preferred.
+									<br><br>
+									<b>Scalable:</b> A customer experience platform that can scale with my business as it grows would be ideal.
+									<br><br>
+								</p>
+
+								<h4>Pain Points</h4>
+								<br>
+								<p><b>Resource constraints:</b> Limited resources, including time, money, and staff, can make it difficult to implement a comprehensive customer experience program.
+									<br><br>
+									<b>Data silos:</b> Data silos across different business systems can make it challenging to create a unified view of the customer and provide a seamless experience across channels.
+									<br><br>
+									<b>Integration challenges:</b> Integrating a new customer experience platform with existing business systems can be complex and time-consuming.
+									<br><br>
+									<b>Lack of expertise:</b> As an SME or D2C owner, I may not have extensive expertise in customer experience management, which can make it challenging to implement and optimize a program.
+									<br><br>
+									<b>Keeping up with changing customer expectations:</b> Customer expectations are constantly evolving, and keeping up with these changes can be challenging for SMEs and D2C businesses with limited resources.
+									<br><br>
+								</p>
+								<br>
+								<br>
+								<h2>User Persona</h2>
+								<div class="work-img"><img src="assets/img/works/work images/SE1.png" alt=""></div>
+								<br>
+								<div class="work-img"><img src="assets/img/works/work images/SE2.png" alt=""></div>
+
+								<h2>User Stories</h2>
+								
+								<br>
+								<p><b>Business Owner Perspective:</b> 
+									<br><br>
+									As a business owner, I want to be able to view all customer interactions in one place, so that I can have a comprehensive overview of our customer relationship management efforts.
+									<br><br>
+									As a business owner, I want to be able to generate reports on sales activity and customer behavior, so that I can make informed decisions about our sales and marketing strategies.
+									<br><br>
+									As a business owner, I want to be able to assign tasks and set reminders for my sales team, so that I can ensure that they are following up with leads and closing deals efficiently.
+									<br><br>
+								</p>
+
+								<p><b>Salesperson Perspective:</b> 
+									<br><br>
+									As a salesperson, I want to be able to access all customer information, including contact details and purchase history, so that I can tailor my sales pitch and build stronger relationships with customers.
+									<br><br>
+									As a salesperson, I want to be able to track the progress of each deal in the sales pipeline, so that I can prioritize my efforts and focus on closing the most promising opportunities.
+									<br><br>
+									As a salesperson, I want to be able to receive alerts and reminders for follow-up tasks and appointments, so that I can stay on top of my sales activities and provide timely and personalized service to customers.
+									<br><br>
+								</p>
+
+								<h4>Insights</h4>
+								<br>
+								<p><b>Simplify data management:</b> To address the pain point of data silos, the platform should simplify customer data management by providing a unified view of the customer across all channels. This could be achieved by integrating data from different sources into a single database, providing easy-to-use data management tools, and ensuring data accuracy and consistency.
+									<br><br>
+									<b>Provide easy-to-use analytics and reporting:</b> To help SMEs and D2C businesses optimize the customer experience, the platform should provide easy-to-use analytics and reporting tools. These tools should provide actionable insights that help business owners make data-driven decisions and improve the customer experience across all channels.
+									<br><br>
+									<b>Integrate with existing systems:</b> To address the pain point of integration challenges, the platform should be designed to integrate seamlessly with existing business systems. This could be achieved by providing pre-built integrations with popular business systems, offering APIs and webhooks for custom integrations, and ensuring that the platform is compatible with different technology stacks.
+									<br><br>
+									<b>Provide personalized and customizable experiences:</b> To meet the preference for customization, the platform should provide tools that enable SMEs and D2C businesses to create personalized customer experiences based on customer preferences and behavior. This could be achieved by providing easy-to-use tools for creating personalized content and offers, allowing for dynamic content based on customer behavior, and offering customizable templates for different types of experiences.
+									<br><br>
+									<b>Prioritize user experience:</b> To meet the preference for an easy-to-use platform, the platform should prioritize user experience by providing an intuitive interface, clear navigation, and easy-to-understand terminology. Additionally, the platform should offer training and support resources to help SMEs and D2C businesses get started and optimize their use of the platform.
+									<br><br>
+									<b>Offer cost-effective pricing:</b> To address the pain point of resource constraints, the platform should offer cost-effective pricing that is affordable for SMEs and D2C businesses. This could be achieved by offering tiered pricing based on usage or providing a pay-as-you-go model.
+									<br><br>
+									<b>Keep up with changing customer expectations:</b> To address the pain point of keeping up with changing customer expectations, the platform should be designed to evolve and adapt over time. This could be achieved by incorporating feedback from users, keeping up with emerging trends and technologies, and offering regular updates and enhancements to the platform.
+									<br><br>
+								</p>
+
+								<h4>User Flow</h4>
+								<div class="work-img"><img src="assets/img/works/work images/SE3.png" alt=""></div>
+
+								<h4>Design Shots</h4>
+								<div class="work-img"><img src="assets/img/works/work images/SE4.png" alt=""></div>
+								<div class="work-img"><img src="assets/img/works/work images/SE5.png" alt=""></div>
+								<div class="work-img"><img src="assets/img/works/work images/SE6.png" alt=""></div>
+								<div class="work-img"><img src="assets/img/works/work images/SE7.png" alt=""></div>
+								<div class="work-img"><img src="assets/img/works/work images/SE8.png" alt=""></div>
+				
+				<h4>Figma Designs</h4>
+								<a href="https://www.figma.com/file/TGjP50btZ4wPfZmGTTc6bg/PEX?type=design&node-id=59%3A829&mode=design&t=1rmPrTY38M1Oqd4C-1"> 
+									<b> Check out the High fidelity Design</b> 
+								</a>
+								<br><br>
+								<a href="https://www.figma.com/file/TGjP50btZ4wPfZmGTTc6bg/PEX?type=design&node-id=12%3A5&mode=design&t=1rmPrTY38M1Oqd4C-1"> 
+									<b> Check out the Wireframe Design</b> 
+								</a>
+
+								<h2>Future Scope</h2>
+								<br>
+								<p>The design is still in progress, I have planned to add more features and screens as soon as possible since i am occupied with other learnings for now. The glimpse of future on this project are
+								</p>
+
+								<ul class="custom-list">
+								<li>Pipeline screens</li>
+								<li>Junk customers segment automation</li>
+								<li>More screens on marketing tab</li>
+								<li>Marketing automation features & screens</li>
+								<li>Marketing campaigns</li>
+								<li>Email and notification templates</li>
+								<li>Reports and charts</li>
+								</ul>
+
+								<div class="work-img"><img src="assets/img/works/work images/SE9.png" alt=""></div>
+				
+				</div>
+							
+						</div><!-- End /  -->
+				
+				</div>
+			<!-- End / Content-->
+				
+				</div>
+		<!-- Vendors-->
+		<script type="text/javascript" src="assets/vendors/jquery/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/imagesloaded/imagesloaded.pkgd.js"></script>
+		<script type="text/javascript" src="assets/vendors/isotope-layout/isotope.pkgd.js"></script>
+		<script type="text/javascript" src="assets/vendors/jquery-one-page/jquery.nav.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/jquery.easing/jquery.easing.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/jquery.matchHeight/jquery.matchHeight.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/masonry-layout/masonry.pkgd.js"></script>
+		<script type="text/javascript" src="assets/vendors/jquery.waypoints/jquery.waypoints.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/swiper/swiper.jquery.js"></script>
+		<script type="text/javascript" src="assets/vendors/menu/menu.js"></script>
+		<script type="text/javascript" src="assets/vendors/typed/typed.min.js"></script>
+		<!-- App-->
+		<script type="text/javascript" src="assets/js/main.js"></script>
+	</body>
+</html>
