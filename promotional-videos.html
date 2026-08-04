@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Work detail</title>
+		<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<!-- Fonts-->
+		<link rel="stylesheet" type="text/css" href="assets/fonts/fontawesome/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/fonts/pe-icon/pe-icon.css">
+		<!-- Vendors-->
+		<link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/grid.css">
+		<link rel="stylesheet" type="text/css" href="assets/vendors/magnific-popup/magnific-popup.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/vendors/swiper/swiper.css">
+		<!-- App & fonts-->
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:400,700">
+		<link rel="stylesheet" type="text/css" id="app-stylesheet" href="assets/css/main.css"><!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<![endif]-->
+		<style>
+			.li-card {
+				display: block;
+				max-width: 420px;
+				margin: 0 auto 30px auto;
+				background: #ffffff;
+				border: 1px solid #e5e5e5;
+				border-radius: 8px;
+				overflow: hidden;
+				text-decoration: none;
+				color: inherit;
+				transition: box-shadow .2s ease, transform .2s ease;
+			}
+			.li-card:hover {
+				box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+				transform: translateY(-2px);
+			}
+			.li-card__media {
+				position: relative;
+				background: #0a0a0a;
+				line-height: 0;
+			}
+			.li-card__media img {
+				width: 100%;
+				height: auto;
+				display: block;
+			}
+			.li-card__play {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 56px;
+				height: 56px;
+				border-radius: 50%;
+				background: rgba(255,255,255,0.92);
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				box-shadow: 0 4px 14px rgba(0,0,0,0.35);
+			}
+			.li-card__play::after {
+				content: '';
+				border-style: solid;
+				border-width: 10px 0 10px 16px;
+				border-color: transparent transparent transparent #0a66c2;
+				margin-left: 4px;
+			}
+			.li-card__body {
+				padding: 16px 18px;
+			}
+			.li-card__title {
+				font-size: 15px;
+				font-weight: 600;
+				color: #222;
+				margin: 0 0 6px 0;
+			}
+			.li-card__cta {
+				font-size: 13px;
+				font-weight: 600;
+				color: #0a66c2;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div class="page-wrap" id="root">
+			
+			<!-- header -->
+			<header class="header header--fixed">
+				<div class="header__inner">
+					<div class="header__logo"><a href="index.html"><img src="assets/img/logo.png" alt="" style="width: 122px;"/></a></div>
+					<button class="header-burger" id="header-burger" aria-label="Toggle menu" aria-expanded="false">
+						<span></span><span></span><span></span>
+					</button>
+					<div class="header-nav-wrap" id="site-nav-wrap">
+						<nav class="site-nav">
+							<ul class="site-nav__list">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="My_Design_Approach.html">My Design Approach</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header><!-- End / header -->
+			<script>
+			(function () {
+				var burger = document.getElementById('header-burger');
+				var navWrap = document.getElementById('site-nav-wrap');
+				if (!burger || !navWrap) { return; }
+
+				function closeMenu() {
+					burger.classList.remove('is-open');
+					navWrap.classList.remove('is-open');
+					burger.setAttribute('aria-expanded', 'false');
+				}
+
+				burger.addEventListener('click', function (e) {
+					e.preventDefault();
+					e.stopPropagation();
+					var isOpen = burger.classList.toggle('is-open');
+					if (isOpen) {
+						navWrap.classList.add('is-open');
+					} else {
+						navWrap.classList.remove('is-open');
+					}
+					burger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+				});
+
+				var links = navWrap.querySelectorAll('a');
+				for (var i = 0; i < links.length; i++) {
+					links[i].addEventListener('click', closeMenu);
+				}
+
+				document.addEventListener('click', function (e) {
+					if (!burger.contains(e.target) && !navWrap.contains(e.target)) {
+						closeMenu();
+					}
+				});
+			})();
+			</script>
+			
+			<!-- Content-->
+			<div class="wil-content">
+				
+				<!-- Section -->
+				<section class="awe-section hero-section">
+					<div class="container">
+						
+						<!-- page-title -->
+						<div class="page-title pb-40">
+							<h2 class="page-title__title">Promotional &amp; Product Videos</h2>
+							<p class="page-title__text">Short-form video content for social and marketing promotion</p>
+							<div class="page-title__divider"></div>
+						</div><!-- End / page-title -->
+						
+					</div>
+				</section>
+				<!-- End / Section -->
+				
+				
+				<!-- Section -->
+				<section class="awe-section bg-gray">
+					<div class="container">
+						
+						<!--  -->
+						<div>
+							<div class="work-detail__entry">
+								<p>Alongside print and exhibition graphics, RedeemX also needed short-form video content for LinkedIn — event recaps, survey call-outs, and on-the-ground moments from trade shows like AGE24. These posts needed to grab attention fast in a crowded feed while staying consistent with the brand's visual identity across captions, motion, and pacing.</p>
+								<br><br>
+
+								<div class="row">
+									<div class="col-md-6">
+										<a class="li-card" href="https://www.linkedin.com/posts/redeemx-au_thanks-to-all-who-completed-the-survey-from-activity-7234063525839564800-JoUF" target="_blank" rel="noopener">
+											<div class="li-card__media"><img src="assets/img/works/work images/Vid_1.png" alt="RedeemX Presents: Conversations with Industry Leaders"><div class="li-card__play"></div></div>
+											<div class="li-card__body">
+												<p class="li-card__title">Thanks to all who completed the survey</p>
+												<span class="li-card__cta">Watch on LinkedIn &rarr;</span>
+											</div>
+										</a>
+									</div>
+									<div class="col-md-6">
+										<a class="li-card" href="https://www.linkedin.com/posts/redeemx-au_age2024-redeemx-cxm-activity-7231542459711774720-7bS5" target="_blank" rel="noopener">
+											<div class="li-card__media"><img src="assets/img/works/work images/Vid_2.png" alt="RedeemX kiosk solutions at AGE 2024"><div class="li-card__play"></div></div>
+											<div class="li-card__body">
+												<p class="li-card__title">AGE 2024 &middot; RedeemX CXM</p>
+												<span class="li-card__cta">Watch on LinkedIn &rarr;</span>
+											</div>
+										</a>
+									</div>
+									<div class="col-md-6">
+										<a class="li-card" href="https://www.linkedin.com/posts/redeemx-au_we-are-live-at-the-age-activity-7229243730724012033-8UTw" target="_blank" rel="noopener">
+											<div class="li-card__media"><img src="assets/img/works/work images/Vid_3.png" alt="We are live at AGE"><div class="li-card__play"></div></div>
+											<div class="li-card__body">
+												<p class="li-card__title">We are live at AGE!</p>
+												<span class="li-card__cta">Watch on LinkedIn &rarr;</span>
+											</div>
+										</a>
+									</div>
+									<div class="col-md-6">
+										<a class="li-card" href="https://www.linkedin.com/posts/redeemx-au_come-and-see-redeemx-at-age24-activity-7228697863210291200-OqWc" target="_blank" rel="noopener">
+											<div class="li-card__media"><img src="assets/img/works/work images/Vid_4.png" alt="Love your data - RedeemX reporting dashboard"><div class="li-card__play"></div></div>
+											<div class="li-card__body">
+												<p class="li-card__title">Come and see RedeemX at AGE24</p>
+												<span class="li-card__cta">Watch on LinkedIn &rarr;</span>
+											</div>
+										</a>
+									</div>
+								</div>
+
+							</div>
+							
+						</div><!-- End /  -->
+						
+						
+				
+			</div>
+			<!-- End / Content-->
+			
+
+			
+		</div>
+		<!-- Vendors-->
+		<script type="text/javascript" src="assets/vendors/jquery/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/imagesloaded/imagesloaded.pkgd.js"></script>
+		<script type="text/javascript" src="assets/vendors/isotope-layout/isotope.pkgd.js"></script>
+		<script type="text/javascript" src="assets/vendors/jquery-one-page/jquery.nav.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/jquery.easing/jquery.easing.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/jquery.matchHeight/jquery.matchHeight.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/masonry-layout/masonry.pkgd.js"></script>
+		<script type="text/javascript" src="assets/vendors/jquery.waypoints/jquery.waypoints.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/swiper/swiper.jquery.js"></script>
+		<script type="text/javascript" src="assets/vendors/menu/menu.js"></script>
+		<script type="text/javascript" src="assets/vendors/typed/typed.min.js"></script>
+		<!-- App-->
+		<script type="text/javascript" src="assets/js/main.js"></script>
+	</body>
+</html>
